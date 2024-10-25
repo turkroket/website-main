@@ -1,0 +1,248 @@
+@import url("./main.css");
+
+.volunteerpage-main{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height:calc(100vh - 110px);
+    padding-left: 2.5vw;
+    padding-top: 20px; 
+}
+
+.volunteerpage-container{
+	color:var(--font-color);
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.volunteerpage-header{
+    font-size: 20px;
+    color:var(--menu-hover-color);
+    letter-spacing: -1px;
+}
+
+.volunteerpage-container p {
+	color:var(--font-color);
+    margin-right:20px;
+}
+
+.ayrac{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.ayrac p{
+	color:var(--font-color);
+    margin-right: 10px;
+}
+
+.ayrac3{
+    display: grid;
+    grid-template-columns: 30% 32% 30%;
+}
+
+.ayrac3 p{
+	color:var(--font-color);
+    margin-right: 10px;
+}
+
+.box{
+	position: relative;
+	width: 97%;
+	height: 100%;
+	background: transparent;
+	border-radius: 8px;
+	overflow: hidden;
+    margin-left:10px;
+}
+
+.box::before 
+{
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 100%;
+	height: 100%;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,rgb(36, 91, 149),rgb(36, 91, 149));
+	animation: animate 6s linear infinite;
+}
+
+.box::after 
+{
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 100%;
+	height: 100%;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,rgb(36, 91, 149),rgb(36, 91, 149));
+	animation: animate 6s linear infinite;
+	animation-delay: -3s;
+}
+@keyframes animate 
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+
+form 
+{
+    margin: auto;
+    align-items: center;
+	position: absolute;
+	inset: 2px;
+	color: var(--font-color);
+	background: var(--menu-bg-color);
+	padding: 50px 40px;
+	border-radius: 8px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+.inputBox 
+{
+	position: relative;
+	width: 300px;
+	margin-top: 20px;
+}
+
+.inputBox input 
+{
+	position: relative;
+	width: 100%;
+	padding: 20px 10px 10px;
+	background: transparent;
+	outline: none;
+	box-shadow: none;
+	border: none;
+	color: var(--font-color);
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	z-index: 10;
+}
+
+.inputBox span 
+{
+	position: absolute;
+	left: 0;
+	padding: 20px 0px 10px;
+	pointer-events: none;
+	font-size: 1em;
+	color: #8f8f8f;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span 
+{
+	color: var(--menu-hover-color);
+	transform: translateX(0px) translateY(-34px);
+	font-size: 0.75em;
+}
+
+input[type="submit"]
+{
+	border: none;
+	outline: none;
+	padding: 10px;
+	background:rgb(36, 91, 149);
+	cursor: pointer;
+	border-radius: 4px;
+    color : #ffff;
+	font-weight: 600;
+	width: 50%;
+	margin-top: 10px;
+    position: center;
+}
+input[type="submit"]:active 
+{
+	opacity: 0.8;
+}
+
+.box p, .inputBox{
+    margin:auto;
+    font-size: 15px;
+}
+
+button{
+	border: none;
+	outline: none;
+	padding: 10px;
+	background:rgb(36, 91, 149);
+	cursor: pointer;
+	border-radius: 4px;
+    color : #ffff;
+	font-weight: 600;
+	width: 50%;
+	margin-top: 10px;
+    position: center;
+}
+
+button:active{
+	opacity:0.8;
+}
+
+.mobile-volunteers{
+	display: none;
+}
+
+@media screen and (max-width:1028px){
+
+    .volunteerpage-main{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .volunteers{
+        display:none;
+    }
+
+	.main-header{
+        margin-right:2.5vw;
+    }
+
+	.mobile-volunteers{
+		display: contents;
+	}
+
+}
+
+@media screen and (max-width:600px){
+	.volunteerpage-main{
+		height:100%;
+		margin-left:20px;
+		margin-right:20px;
+	}
+
+	.volunteerpage-container{
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width:700px){
+    .ayrac3{
+        display: grid;
+        grid-template-columns: 100%;
+    }   
+
+	.ayrac{
+        display: grid;
+        grid-template-columns: 100%;
+    }   
+
+}

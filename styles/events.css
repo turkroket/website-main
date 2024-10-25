@@ -1,0 +1,327 @@
+@import url("./main.css");
+
+
+
+.a-main{
+
+    height:calc(100vh - 110px);
+
+
+
+    display: grid;
+
+    grid-template-columns: 65% 35%;
+
+    padding-left: 2.5vw;
+
+    padding-top: 20px; 
+
+}
+
+
+
+.about-header{
+
+    font-size: 20px;
+
+    color:var(--menu-hover-color);
+
+    letter-spacing: -1px;
+
+    margin-top:0;
+
+}
+
+
+
+.old-as{
+
+    width: 100%;
+
+    height:calc(100vh - 130px);
+
+    overflow: scroll;
+
+    overflow-x: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding-top:10px;
+
+}
+
+
+
+.old-alist{
+
+    display: flex;
+
+    /*justify-content:center;*/
+
+    /*text-align: center;*/
+
+    padding-left:20px;
+
+    margin-right:50px;
+
+    height: 7vh;
+
+    border-radius: 10px;
+
+    align-items: center;
+
+    background-color:var(--menu-bg-color);
+
+    color:var(--font-color);
+
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+
+}
+
+
+.itemcalendar{
+
+    border-radius: 10px;
+
+    background-color:var(--menu-bg-color);
+
+    color:var(--font-color);
+
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+
+    padding:20px;
+
+}
+
+
+.new-act p{
+
+    border-radius: 10px;
+
+    color:var(--font-color);
+
+    background-color:var(--menu-bg-color);
+
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+
+    padding:20px;
+
+    margin-bottom:10px;
+
+}
+
+.new-act iframe {
+    border-radius: 10px;
+}
+
+
+
+.newas{
+
+    height:calc(100% - 20px);
+    width: 95%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left:20px;
+    padding-right:10px;
+
+}
+
+.instagram-media{
+    border-radius: 10px;
+}
+
+.new-act iframe{
+    border-radius: 10px;
+}
+
+
+.takvim{
+
+    display: flex;
+
+    /*grid-template-columns:10% 10% 10% 10% 10% 10% 10% ;*/
+
+    flex-direction: row;
+
+}
+
+
+
+.takvim-column{
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-right: 10px;
+
+    text-align:center;
+
+}
+
+
+
+.days{
+
+    margin-top:10px;
+
+}
+
+
+
+.days.header{
+
+    font-size: 20px;
+
+}
+
+
+
+.days.old{
+
+    color:#d4dade;
+
+}
+
+
+
+.days.selected{
+
+    border-radius: 50px;
+
+    background-color:#91adca;  
+
+}
+
+
+
+.teams{
+
+    margin-right:20px;
+
+}
+
+
+
+.mobile-calendar{
+
+    display: none;
+
+}
+
+
+
+@media screen and (max-width:1028px){
+
+    .a-main{
+
+        display: grid;
+
+        grid-template-columns: 100%;
+
+    }
+
+
+
+    .main-header{
+
+        margin-right:2.5vw;
+
+    }
+
+
+
+    .newas{
+
+        display:none;
+
+    }
+
+
+
+    .itemcalendar{
+
+        margin-right:2vw;
+
+    }
+
+
+
+    .old-alist{
+
+        margin-right:2vw;
+
+    }
+
+
+
+    .new-act p{
+
+        margin-right:2vw;
+
+    }
+
+
+
+    .mobile-calendar{
+
+        display: contents;
+
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width:600px){
+
+
+
+    .mobile-body{
+
+        padding-left:20px;
+
+        padding-right:20px;
+
+        padding-top:30px;
+
+    }
+
+
+
+    .itemcalendar{
+
+        margin:0;
+
+    }
+
+
+
+    .old-alist{
+
+        margin:0;
+
+    }
+
+
+
+    .new-act p{
+
+        margin-right:0;
+
+    }
+
+
+
+    .old-alist:last-child{
+
+        margin-bottom:20px;
+
+    }
+
+}

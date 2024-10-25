@@ -1,0 +1,127 @@
+@import url("./main.css");
+
+.notify-main{
+    height:calc(100vh - 110px);
+
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding-left: 2.5vw;
+    padding-top: 20px; 
+}
+
+.about-header{
+    font-size: 20px;
+    color:var(--menu-hover-color);
+    letter-spacing: -1px;
+    margin-top:0;
+}
+
+.old-a{
+    height:calc(100vh - 150px);
+    overflow: auto;
+}
+
+.sended-notify{
+    color: var(--font-color);
+    height:calc(100vh - 130px);
+}
+
+.old-alist{
+    display: flex;
+    /*justify-content:center;*/
+    /*text-align: center;*/
+    padding-left:20px;
+    margin-right:50px;
+    height: 7vh;
+    border-radius: 10px;
+    align-items: center;
+    color: var(--font-color);
+    background-color:var(--menu-bg-color);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+}
+
+.mini-notify{
+    color: var(--font-color);
+}
+
+form {
+    color:var(--font-color);
+	background: var(--menu-bg-color);
+	padding: 40px 40px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+}
+
+input[type="submit"]{
+    border: none;
+	outline: none;
+	padding: 11px 25px;
+	background:rgb(36, 91, 149);
+	cursor: pointer;
+	border-radius: 4px;
+    color : #ffff;
+	font-weight: 600;
+	width: 50%;
+	margin-top: 10px;
+    position: center;
+}
+
+input[type="submit"]:active{
+
+	opacity: 0.8;
+}
+
+.mini-notify{
+    display: none;
+}
+@media screen and (max-width:1028px){
+    .notify-main{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .main-header{
+        margin-right:2.5vw;
+    }
+
+    .sended-notify{
+        display: none;
+    }
+
+    .mini-notify{
+        display: contents;
+    }
+
+    .old-alist{
+        margin-right:2vw;
+    }
+
+    form{
+        margin-right:2vw;
+    }
+}
+
+@media screen and (max-width:600px){
+    .old-alist{
+        margin-left:20px;
+        margin-right:20px;
+    }
+
+    .about-header{
+        margin-left:20px;
+        margin-right:20px;
+    }
+
+    .mini-notify p{
+        margin-left:20px;
+        margin-right:20px;
+    }
+
+    form{
+        margin-left:20px;
+        margin-right:20px;
+    }
+}
+
+

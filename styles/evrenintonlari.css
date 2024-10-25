@@ -1,0 +1,60 @@
+@import url("./main.css");
+
+
+.evrenintonlari-main{
+    padding-left:2.5vw;
+    padding-top:2.5vw;
+    height:calc(100vh - 110px);
+}
+
+.evrenintonlari-main > div{
+    height:calc((100vh - 2.5vw) - 110px);
+    overflow: auto;
+}
+
+.evrenintonlari-ayrac{
+    padding:20px;
+    color:var(--font-color);
+    background-color: var(--menu-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.05);
+}
+
+.about-header{
+    margin:0;
+    font-size:20px;
+    color:var(--menu-hover-color);
+    letter-spacing: -1px;
+}
+
+.old-alist{
+    display : flex;
+    padding-left:20px;
+    height:7vh;
+    border-radius: 10px;
+    align-items: center;
+    background-color: var(--menu-bg-color);
+    color:var(--font-color);
+    box-shadow: 0 0 40px rgba(0,0,0,0.05);
+}
+
+.old-alist > a{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.svglink{
+    height:20px;
+    margin-bottom:0;
+    margin-left:10px;
+}
+
+@media screen and (max-width: 600px) {
+    .mobile-body{
+        padding-left:20px;
+        padding-right:20px;
+    }
+}
+

@@ -1,0 +1,32 @@
+[
+    {
+        "mainTitle": "ESAS EXPO 2024'e katılacağız!",
+        "author": "Türk Roket Topluluğu",
+        "content": [
+            "Türk Roket Topluluğu olarak, Türkiye'nin savunma sanayi ve teknoloji alanındaki öncü etkinliklerinden biri olan ESAS EXPO 2024 Savunma Sanayi ve Teknoloji Fuarı'na katılacağımızı duyurmaktan mutluluk duyuyoruz. Bahsi geçen fuar, 19-21 Mart 2024 tarihleri arasında İzmir Tepekule Kongre Sergi Merkezi'nde gerçekleştirilecektir.",
+            "Topluluk olarak, savunma sanayi ve uzay teknolojileri alanındaki yenilikçi yaklaşımımızı sergilemek amacıyla bu prestijli etkinlikte yer almaktan gurur duymaktayız. ESAS EXPO 2024, Türkiye'nin savunma sanayi ve teknoloji alanındaki potansiyelini ortaya koymak ve sektördeki işbirliği fırsatlarını artırmak adına önemli bir platform sunmaktadır.",
+            "Bu fuarda, Türk Roket Topluluğu olarak, sektördeki son gelişmeleri, projelerimizi ve teknolojik yeniliklerimizi paydaşlarımızla buluşturarak Türkiye'nin savunma sanayi ve uzay teknolojileri alanındaki ilerlemesine katkıda bulunmayı hedefliyoruz. Ayrıca, sektördeki diğer paydaşlarla işbirliği olanaklarını artırmak ve bilgi alışverişinde bulunmak için etkinliğin sunduğu fırsatları en iyi şekilde değerlendirmeyi planlamaktayız.",
+            "Tüm ilgilileri, Türk Roket Topluluğu standımızı ziyaret etmeye ve savunma sanayi ve uzay teknolojileri alanındaki vizyonumuzu paylaşmaya davet ediyoruz."
+        ],
+        "aboutAuthor": "Türk Roket Topluluğu, kuruluşu 2017’ye dayanan ve Türkiye’de roket bilimini genç, yaşlı; eğitimli, eğitimsiz ayrımı yapmadan anlatmaya çalışan bir topluluktur.",
+        "mainImagePath": "./assets/articles/esasexpo-1200w.avif",
+        "readingTime": "1 dakika",
+        "link": "Test"
+    },
+    
+    {
+        "mainTitle": "Ankara Üniversitesi'ndeydik!",
+        "author": "Türk Roket Topluluğu",
+        "content": [
+            "Türk Roket Topluluğu, Bebar Bilim Topluluğu ve Ankara Üniversitesi IEEE Öğrenci Topluluğu'nun davetiyle, Ankara üniversitesi'nde düzenlenen bölüm tanıtım günlerinde yer aldı.",
+            "Topluluğumuzun stant açtığı etkinlikte, arkadaşlarımız, üniversiteye yeni başvuracak gençlerle bir araya gelerek lisans sürecine katılabilecekleri farklı roket yarışmalarından bahsettiler. Ulusal ve uluslararası yarışmaları ve başvuru kriterlerini aktaran arkadaşlarımız, ziyaretçiler tarafından gelen soruları içtenlikle cevapladılar.",
+            "ODTÜ'de Araştırma Görevlisi olarak görev yapan ve medyada yaptığı akademik patlaşımlar ile tanınan Ertan Sinan Şahin, standımıza uğradı. Aviyonik ve yapısal gelişmeler hakkında bilgi alan Ertan Bey, gelecek projelerimize dair olumlu düşüncelerini ve iyi dileklerini iletti.",
+            "Etkinlikte ayrıca alanlarında yetkin akademisyenlerin katılımıyla Ankara Üniversitesi'nde bulunan farklı mühendislik bölümlerine dair tanıtıcı sunumlar gerçekleştirildi. Şehir içinden ve dışından birçok genç sunumları izleme fırsatı yakaladı.",
+            "Etkinlik alanında stant açmı farklı topluluklarla ortak proje ve işbirliği üzerine konuşan arkadaşlarımız, üniversite içerisindeki durumlar hakkında da bilgi aldılar. Etkinliğe davetleri için Ankara Üniversitesi IEEE Öğrenci Topluluğu'na ve Bebar Bilim Topluluğu'na teşekkür ederiz."
+        ],
+        "aboutAuthor": "Türk Roket Topluluğu, kuruluşu 2017’ye dayanan ve Türkiye’de roket bilimini genç, yaşlı; eğitimli, eğitimsiz ayrımı yapmadan anlatmaya çalışan bir topluluktur.",
+        "mainImagePath": "./assets/articles/ankarauni.webp",
+        "readingTime": "2 dakika",
+        "link": "Test"
+    }
+]

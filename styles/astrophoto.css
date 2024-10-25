@@ -1,0 +1,445 @@
+@import url("./main.css");
+
+.evrenintonlari-main{
+    height:calc(100vh - 110px);
+    padding-left:2.5vw;
+    padding-top:2.5vw;
+}
+
+.evrenintonlari-submain{
+    width:100%;
+    height:100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--menu-bg-color);
+    color:var(--font-color);
+    border-radius: 10px;
+    padding:20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+}
+
+.evrenintonlari{
+    text-align: center;
+    /*align-items: center;*/
+    justify-content: center;
+    width: 100%;
+    height:420px;
+    overflow-y:auto;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.evrenintonlari-info{
+    height: calc(100% - 450px);
+}
+
+.evrenintonlari .options {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    min-width: 1100px;
+    max-width: 1500px;
+    width: calc(100% - 40px);
+    height: 400px;
+}
+
+@media screen and (max-width: 718px) {
+    .evrenintonlari .options {
+        min-width: 520px;
+   }
+    .evrenintonlari .options .option:nth-child(5) {
+        display: none;
+   }
+}
+@media screen and (max-width: 638px) {
+    .evrenintonlari .options {
+        min-width: 440px;
+   }
+    .evrenintonlari .options .option:nth-child(4) {
+        display: none;
+   }
+}
+@media screen and (max-width: 558px) {
+    .evrenintonlari .options {
+        min-width: 360px;
+   }
+    .evrenintonlari .options .option:nth-child(3) {
+        display: none;
+   }
+}
+@media screen and (max-width: 478px) {
+    .evrenintonlari .options {
+        min-width: 280px;
+   }
+    .evrenintonlari .options .option:nth-child(2) {
+        display: none;
+   }
+}
+
+.evrenintonlari .options .option {
+    position: relative;
+    overflow: hidden;
+    min-width: 60px;
+    margin: 10px;
+    background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+    background-size: auto 120%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.evrenintonlari .options .option.active {
+    flex-grow: 10000;
+    transform: scale(1);
+    max-width: 600px;
+    margin: 0px;
+    border-radius: 10px;
+    background-size: auto 100%;
+   /*&:active {
+        transform:scale(0.9);
+   }
+   */
+}
+
+.evrenintonlari .options .option.active .shadow{
+    box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+}
+.evrenintonlari .options .option.active .label{
+    bottom: 20px;
+    left: 20px;
+}
+.evrenintonlari .options .option.active .label .info > div {
+    left: 0px;
+    opacity: 1;
+}
+.evrenintonlari .options .option:not(.active) {
+    flex-grow: 1;
+    border-radius: 30px;
+}
+.evrenintonlari .options .option:not(.active) .shadow {
+    bottom: -40px;
+    box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+}
+.evrenintonlari .options .option:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+}
+.evrenintonlari .options .option:not(.active) .label .info > div {
+    left: 20px;
+    opacity: 0;
+}
+
+.evrenintonlari .options .option .shadow {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 120px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.evrenintonlari .options .option .label {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.evrenintonlari .options .option .label .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    color: var(--defaultBackground);
+}
+.evrenintonlari .options .option .label .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    color: white;
+    white-space: pre;
+}
+.evrenintonlari .options .option .label .info > div {
+    position: relative;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+.evrenintonlari .options .option .label .info .main {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.evrenintonlari .options .option .label .info .sub {
+    transition-delay: 0.1s;
+}
+
+
+.evrenintonlari-mobile{
+    background-color:var(--menu-bg-color);
+    border-radius: 10px;
+    margin:20px;
+}
+
+.photo-section{
+    text-align: center;
+    /*align-items: center;*/
+    justify-content: center;
+    width: 100%;
+    overflow-y:auto;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    border-radius: 10px;
+    padding-top:10px;
+}
+
+.options-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+    width: calc(100% - 40px);
+    height: 600px;
+}
+
+.photo-section .options-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+    width:100%;
+    /*width: calc(100% - 70px);*/
+}
+
+.photo-section .options-mobile .option-mobile {
+    position: relative;
+    overflow: hidden;
+    min-width: calc(100% - 20px);
+    margin: 10px;
+    background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+
+.photo-section .options-mobile .option-mobile.active {
+    flex-grow: 10000;
+    transform: scale(1);
+    max-width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    background-size: cover;
+    color:#fff;
+   /*&:active {
+        transform:scale(0.9);
+   }
+   */
+}
+
+.photo-section .options-mobile .option-mobile.active .shadow{
+    box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+}
+.photo-section .options-mobile .option-mobile.active .label{
+    bottom: 20px;
+    left: 20px;
+}
+.photo-section .options-mobile .option-mobile.active .label .info > div {
+    left: 0px;
+    opacity: 1;
+}
+.photo-section .options-mobile .option-mobile:not(.active) {
+    flex-grow: 1;
+    border-radius: 30px;
+}
+.photo-section .options-mobile .option-mobile:not(.active) .shadow {
+    bottom: -40px;
+    box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+}
+.photo-section .options-mobile .option-mobile:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+}
+.photo-section .options-mobile .option-mobile:not(.active) .label .info > div {
+    left: 20px;
+    opacity: 0;
+}
+
+.photo-section .options-mobile .option-mobile .shadow {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 120px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.photo-section .options-mobile .option-mobile .label .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    color: var(--defaultBackground);
+}
+
+.photo-section .options-mobile .option-mobile .label .info > div {
+    position: relative;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+.photo-section .options-mobile .option-mobile .label .info .main {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.photo-section .options-mobile .option-mobile .label .info .sub {
+    transition-delay: 0.1s;
+}
+
+.about-header{
+
+    margin:0;
+    font-size: 20px;
+    color:var(--menu-hover-color);
+    letter-spacing: -1px;
+
+}
+
+.evrenintonlari-info{
+    /*height:calc(100% - 900px);*/
+    margin-top:20px;
+    margin-left:15px;
+    margin-right:15px;
+    color:var(--font-color);
+}
+
+.header{
+    border-left:solid;
+    border-width: 5px;
+    color: var(--font-color);
+    border-color:var(--menu-hover-color);
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: var(--evrenintonlari-header);
+    border-radius: 5px;
+}
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+    .evrenintonlari .options {
+        max-width: 1000px;
+        min-width: 900px;
+
+}
+}
+
+@media screen and (max-width: 1160px) {
+    .evrenintonlari .options {
+        max-width: 1000px;
+        min-width: 800px;
+
+}
+}
+
+@media screen and (max-width: 1160px) {
+    .evrenintonlari .options {
+        max-width: 1000px;
+        min-width: 800px;
+
+}
+}
+
+@media screen and (max-width: 1002px) {
+    .evrenintonlari .options .option:nth-child(8) {
+        display: none;
+    }
+
+    .evrenintonlari .options {
+        max-width: 1000px;
+        min-width: 750px;
+
+}
+}
+
+@media screen and (max-width: 936px) {
+    .evrenintonlari .options .option:nth-child(7) {
+        display: none;
+    }
+
+    .evrenintonlari .options {
+        max-width: 1000px;
+        min-width: 700px;
+
+}
+}
+
+@media screen and (max-width: 874px) {
+    .evrenintonlari .options .option:nth-child(6) {
+        display: none;
+    }
+
+    .evrenintonlari .options {
+        max-width: 1000px;
+        min-width: 650px;
+
+}
+}
+
+@media screen and (max-width: 816px) {
+    .evrenintonlari .options {
+        max-width: 1000px;
+        min-width: 600px;
+
+}
+}
+
+@media screen and (max-width: 758px) {
+    .evrenintonlari .options .option:nth-child(5) {
+        display: none;
+    }
+
+    .evrenintonlari .options {
+        max-width: 1000px;
+        min-width: 550px;
+
+}
+}
+
+@media screen and (max-width: 700px) {
+    .evrenintonlari .options .option:nth-child(4) {
+        display: none;
+    }
+
+    .evrenintonlari .options {
+        max-width: 1000px;
+        min-width: 500px;
+
+}
+}
+
+@media screen and (max-width: 650px) {
+    .evrenintonlari .options .option:nth-child(4) {
+        display: none;
+    }
+
+    .evrenintonlari .options {
+        max-width: 1000px;
+        min-width: 475px;
+
+}
+}

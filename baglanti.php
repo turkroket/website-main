@@ -4,9 +4,9 @@ Veritabani baglantimizi yapiyoruz
 */
 
 $hostadresi        =	"localhost";
-$kullaniciadi      =	"tur85oketspace_user";
-$sifre             =	"2turkrek017";
-$veritabani        =	"tur85oketspace_database";
+$kullaniciadi      =	"root";
+$sifre             =	"";
+$veritabani        =	"";
 
 $db = mysqli_connect($hostadresi,$kullaniciadi,$sifre,$veritabani);
 if (mysqli_connect_errno())
